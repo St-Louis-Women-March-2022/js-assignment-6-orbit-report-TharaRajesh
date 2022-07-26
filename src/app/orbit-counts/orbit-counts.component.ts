@@ -10,7 +10,8 @@ export class OrbitCountsComponent implements OnInit {
 
 	@Input() satellites: Satellite[];
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit() {
   }
@@ -22,6 +23,7 @@ export class OrbitCountsComponent implements OnInit {
 		 if (this.satellites[i].type === type) {
 			count++;
 		 }
+		
 	  }
 	}
 	return count;
